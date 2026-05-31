@@ -26,5 +26,5 @@ To run this application locally, you will need Java 17+ and Maven installed on y
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/StackLib.git](https://github.com/your-username/StackLib.git)
+   git clone [https://github.com/Soumyadeep257/StackLib.git](https://github.com/Soumyadeep257/StackLib.git)
    cd StackLib
