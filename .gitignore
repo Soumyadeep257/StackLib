@@ -1,0 +1,9 @@
+# Compiled class files & Maven target folder
+target/
+*.class
+
+# VS Code specific files
+.vscode/
+
+# Ignore the local SQLite database so clones start fresh
+library.db
