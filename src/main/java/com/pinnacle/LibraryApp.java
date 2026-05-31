@@ -24,7 +24,7 @@ public class LibraryApp extends Application {
         sidebar.setPrefWidth(240);
         sidebar.setStyle("-fx-background-color: #191923; -fx-padding: 30px 20px;");
 
-        Label logo = new Label("Pinnacle\nLibrary.");
+        Label logo = new Label("StackLib");
         logo.setStyle("-fx-text-fill: white; -fx-font-size: 26px; -fx-font-weight: bold; -fx-padding: 0 0 40 0;");
 
         Button btnDash = createNavButton("📊 Dashboard");
