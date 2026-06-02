@@ -101,7 +101,10 @@ public class DatabaseManager {
 
         // 3. Process the Issue
         String updateStock = "UPDATE books SET quantity = quantity - 1 WHERE book_id = ?";
-        String logIssue = "INSERT INTO issues(student_id, book_id) VALUES(?, ?)";
+        
+        //Explicitly passing 'CURRENT_DATE' to satisfy the NOT NULL database constraint
+        String logIssue = "INSERT INTO issues(student_id, book_id, issue_date) VALUES(?, ?, CURRENT_DATE)";
+        
         try (Connection conn = connect(); 
              PreparedStatement stockStmt = conn.prepareStatement(updateStock); 
              PreparedStatement issueStmt = conn.prepareStatement(logIssue)) {
